@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Fuel Way
+
+  Created by Andrey Plygun on 11/24/19.
+  Copyright © 2019 Andrey Plygun. All rights reserved.
+*/
+
+"Start" = "Начало";
+"Finish" = "Конец";
+"Options" = "Опции";
+"Could not find a route" = "Не удалось найти маршрут";
+"Distance:" = "Дистанция";
+"km" = "км";
+"Amount of fuel:" = "Количество топлива";
+"L" = "Л";
+"Total cost of fuel:" = "Общая стоимость топлива";
+"Fuel Consumption" = "Расход топлива";
+"Price of fuel" = "Цена топлива";
+"Done" = "Готово";
+"Here you can easily calculate distanse of your trip and, if you define your car's consumption of fuel (liter per 100 km), you'll get amount of fuel you need for trip. Additionaly you can define cost of one liter of fuel, so you'll also know, how much will cost trip" = "Здесь вы можете легко узнать дистанцию вашей поездки и, если вы укажете расход топлива для вашего автомобиля (в литрах на 100 км), вы также узнаете количество топлива, необходимое для поездки. Также вы можете указать стоимость одного литра топлива, что позволит узнать стоимость поездки";
+"Calculate" = "Рассчитать";
+"Hide" = "Скрыть";
+"Dismiss" = "Закрыть";
+"About" = "О программе";

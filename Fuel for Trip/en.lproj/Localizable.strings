@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Fuel Way
+
+  Created by Andrey Plygun on 11/24/19.
+  Copyright © 2019 Andrey Plygun. All rights reserved.
+*/
+
+
+"Start" = "Start";
+"Finish" = "Finish";
+"Options" = "Options";
+"Could not find a route" = "Could not find a route";
+"Distance:" = "Distance:";
+"km" = "km";
+"Amount of fuel:" = "Amount of fuel:";
+"L" = "L";
+"Total cost of fuel:" = "Total cost of fuel:";
+"Fuel consumption" = "Fuel consumption";
+"Price of fuel" = "Price of fuel";
+"Done" = "Done";
+"Here you can easily calculate distanse of your trip and, if you define your car's consumption of fuel (liter per 100 km), you'll get amount of fuel you need for trip. Additionaly you can define cost of one liter of fuel, so you'll also know, how much will cost trip" = "Here you can easily calculate distanse of your trip, and, if you define your car's consumption of fuel (liter per 100 km), you'll get amount of fuel you need for trip. Additionaly you can define cost of one liter of fuel, so you'll also know, how much will cost trip";
+"Calculate" = "Calculate";
+"Hide" = "Hide";
+"Dismiss" = "Dismiss";
+"About" = "About";

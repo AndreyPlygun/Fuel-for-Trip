@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OptionsVC-->
+        <scene sceneID="Y5S-Wr-ddo">
+            <objects>
+                <viewController storyboardIdentifier="OptionsVC" id="5n9-gM-dNo" customClass="OptionsVC" customModule="Fuel_Way" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="CWH-zm-oOg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fuel consumption" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5du-bj-Rnk">
+                                <rect key="frame" x="97.5" y="70" width="180" height="40"/>
+                                <color key="backgroundColor" white="0.18300049309664693" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Ejg-Eq-PUW"/>
+                                    <constraint firstAttribute="height" constant="40" id="k8L-Nj-HRm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price of fuel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-6r-sd6">
+                                <rect key="frame" x="97.5" y="135" width="180" height="40"/>
+                                <color key="backgroundColor" white="0.18300049309664693" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UP-Le-nOs">
+                                <rect key="frame" x="20" y="16" width="132.5" height="35"/>
+                                <color key="backgroundColor" white="0.18300049309664693" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IAh-nU-eeM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Options">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="5n9-gM-dNo" eventType="touchUpInside" id="byy-rd-pgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oju-AV-5ud">
+                                <rect key="frame" x="222.5" y="16" width="132.5" height="35"/>
+                                <color key="backgroundColor" white="0.18300049309664693" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalcTapped:" destination="5n9-gM-dNo" eventType="touchUpInside" id="U2f-hT-Gf5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-hg-q5s">
+                                <rect key="frame" x="160.5" y="183" width="54" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAboutPressed:" destination="5n9-gM-dNo" eventType="touchUpInside" id="P9M-vF-iSg"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrZ-du-Yww">
+                                <rect key="frame" x="20" y="220" width="335" height="197.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-Xr-O9q">
+                                        <rect key="frame" x="8" y="8" width="319" height="181.5"/>
+                                        <string key="text">Here you can easily calculate distanse of your trip, and, if you define your car's consumption of fuel (liter per 100 km), you'll get amount of fuel you need for trip. Additionaly you can define cost of one liter of fuel, so you'll also know, how much will cost trip</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oHo-Xr-O9q" firstAttribute="leading" secondItem="wrZ-du-Yww" secondAttribute="leading" constant="8" id="1is-RJ-XA8"/>
+                                    <constraint firstItem="oHo-Xr-O9q" firstAttribute="top" secondItem="wrZ-du-Yww" secondAttribute="top" constant="8" id="LVN-yh-VZx"/>
+                                    <constraint firstAttribute="bottom" secondItem="oHo-Xr-O9q" secondAttribute="bottom" constant="8" id="Mjz-vG-Cy2"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHo-Xr-O9q" secondAttribute="trailing" constant="8" id="T8O-aD-4fe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wrZ-du-Yww" firstAttribute="top" secondItem="c3t-6r-sd6" secondAttribute="bottom" constant="45" id="1Yg-hz-DAT"/>
+                            <constraint firstItem="7Vh-hg-q5s" firstAttribute="top" secondItem="c3t-6r-sd6" secondAttribute="bottom" constant="8" id="GHc-pu-XyI"/>
+                            <constraint firstItem="5du-bj-Rnk" firstAttribute="top" secondItem="5Cu-U9-EsK" secondAttribute="top" constant="70" id="JIY-wv-wjF"/>
+                            <constraint firstItem="oju-AV-5ud" firstAttribute="height" secondItem="0UP-Le-nOs" secondAttribute="height" id="K65-f8-IYd"/>
+                            <constraint firstItem="5du-bj-Rnk" firstAttribute="centerX" secondItem="5Cu-U9-EsK" secondAttribute="centerX" id="KGw-Yk-fPM"/>
+                            <constraint firstItem="0UP-Le-nOs" firstAttribute="leading" secondItem="5Cu-U9-EsK" secondAttribute="leading" constant="20" id="Mhk-QX-gUE"/>
+                            <constraint firstItem="0UP-Le-nOs" firstAttribute="width" secondItem="oju-AV-5ud" secondAttribute="width" id="NO3-tV-5cJ"/>
+                            <constraint firstItem="0UP-Le-nOs" firstAttribute="top" secondItem="5Cu-U9-EsK" secondAttribute="top" constant="16" id="OtC-vF-Yv0"/>
+                            <constraint firstItem="c3t-6r-sd6" firstAttribute="top" secondItem="5du-bj-Rnk" secondAttribute="bottom" constant="25" id="a61-IL-rHL"/>
+                            <constraint firstItem="5Cu-U9-EsK" firstAttribute="trailing" secondItem="wrZ-du-Yww" secondAttribute="trailing" constant="20" id="aHq-mY-8Ye"/>
+                            <constraint firstItem="7Vh-hg-q5s" firstAttribute="centerX" secondItem="5Cu-U9-EsK" secondAttribute="centerX" id="c8N-KY-6Zt"/>
+                            <constraint firstItem="c3t-6r-sd6" firstAttribute="width" secondItem="5du-bj-Rnk" secondAttribute="width" id="daR-NN-xL8"/>
+                            <constraint firstItem="oju-AV-5ud" firstAttribute="leading" secondItem="0UP-Le-nOs" secondAttribute="trailing" constant="70" id="g9P-mO-KB1"/>
+                            <constraint firstItem="wrZ-du-Yww" firstAttribute="leading" secondItem="5Cu-U9-EsK" secondAttribute="leading" constant="20" id="mhr-nG-VxZ"/>
+                            <constraint firstItem="c3t-6r-sd6" firstAttribute="height" secondItem="5du-bj-Rnk" secondAttribute="height" id="txq-4S-Lc0"/>
+                            <constraint firstItem="oju-AV-5ud" firstAttribute="top" secondItem="5Cu-U9-EsK" secondAttribute="top" constant="16" id="u4s-Ye-NdP"/>
+                            <constraint firstItem="c3t-6r-sd6" firstAttribute="centerX" secondItem="5Cu-U9-EsK" secondAttribute="centerX" id="yLv-Tz-YSN"/>
+                            <constraint firstItem="5Cu-U9-EsK" firstAttribute="trailing" secondItem="oju-AV-5ud" secondAttribute="trailing" constant="20" id="zQL-pr-KGm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Cu-U9-EsK"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="wrZ-du-Yww"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnAbout" destination="7Vh-hg-q5s" id="MX8-CC-Bfa"/>
+                        <outlet property="btnCalc" destination="oju-AV-5ud" id="VSS-NU-UaM"/>
+                        <outlet property="btnDone" destination="0UP-Le-nOs" id="BKl-bT-zPl"/>
+                        <outlet property="infoView" destination="wrZ-du-Yww" id="F2Q-Zz-yIH"/>
+                        <outlet property="lbInfo" destination="oHo-Xr-O9q" id="kEr-xr-BIE"/>
+                        <outlet property="tfConsumption" destination="5du-bj-Rnk" id="D3G-vd-Q9I"/>
+                        <outlet property="tfPrice" destination="c3t-6r-sd6" id="1zW-0L-ap4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BN-6x-kNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167.19999999999999" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+</document>
